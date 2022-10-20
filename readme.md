@@ -5,10 +5,10 @@ a description of my project
 
 ### Technologies Used
 
-- tech
-- tech 2
-- tech 3
-- tech 4
+- jquery
+- HTML
+- CSS
+- JavaScript
 
 ### Wireframes
 
