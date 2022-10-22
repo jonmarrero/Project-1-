@@ -10,7 +10,7 @@
 - CSS
 - JavaScript
 - Json
-- Versel
+- Vercel
 - Rick & Morty API's
 
 ### Wireframes
