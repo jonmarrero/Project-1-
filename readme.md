@@ -10,11 +10,13 @@
 - CSS
 - JavaScript
 - Json
+- Versel
 - Rick & Morty API's
 
 ### Wireframes
 
-![Some text](https://images6.alphacoders.com/909/thumb-1920-909641.png)
+![Some text](public/images/Morty.png)
+![Some text](public/images/Rick.png)
 
 ### Daily Plan
 
