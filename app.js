@@ -1,14 +1,28 @@
 const baseUrl = "https://rickandmortyapi.com/api"
 
+$(function(){
 
-function search (character, location, episode){
-    url1 = `${baseUrl}character/?name=${character}`console.log(url1)
+    const promise = $.ajax({
+        url: 'https://rickandmortyapi.com/api/character'
+    });
 
-    url2 = `${baseUrl}location/?name=${location}`
-    console.log(url2)
+    promise.then(
+       (data) => {
+        console.log(data)
+        render(data.results)
+       },
+       (error) => {
+        console.log(error)
+       } 
+    )
 
-    url3 = `${baseUrl}episode/?name=${episode}`
-    console.log(url3)
-}
+    function render(characters){
+        characters.forEach((character) => {
+            const $h1 = $(`<h3>${character.name}, ${character.species}, ${character.status}</h3>`)   
+            const $img = $(`<img src='' alt=${character.name} />`)
+            $('body').append($h1)
+        })   
+    }
 
-search(character, location, episode)
+})
+
