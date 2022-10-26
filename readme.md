@@ -17,7 +17,7 @@
 
 ![Some text](public/images/rick2.png)
 
-![Some text](publlic/images/morty2.png)
+![Some text](public/images/morty2.png)
 
 ### Daily Plan
 
