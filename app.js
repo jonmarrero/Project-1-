@@ -64,11 +64,11 @@ $(function(){
 
 
 
-//     $("input[type=submit]").on("click", (event) => {
-//     event.preventDefault()
+    $("input[type=submit]").on("click", (event) => {
+    event.preventDefault()
 
-//     const inputText = $("input[type=text]").val()
-//     character(textInput)
-//     characterSearch(inputText)
-// })
+    const inputText = $("input[type=text]").val()
+    character(textInput)
+    characterSearch(inputText)
+})
 
