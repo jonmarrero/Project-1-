@@ -15,8 +15,9 @@
 
 ### Wireframes
 
-![Some text](public/images/Morty.png)
-![Some text](public/images/Rick.png)
+![Some text](public/images/rick2.png)
+
+![Some text](publlic/images/morty2.png)
 
 ### Daily Plan
 
