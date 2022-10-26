@@ -1,7 +1,7 @@
 
 # The Rick & Morty Experience
 
-- During The Rick & Morty experience you will be able to locate any and all; Seasons, Episodes, Characters, Species, and even some cool locations that Rick & Morty have traveled too during their time together. Some small features would include a hover function to change Rick to Morty when you hover over the submit button and popular qoutes from the show will appear each time the page is reloaded. 
+- During The Rick & Morty experience you will be able to search all characters to see; Name, what type of species they are, and there status of dead or alive within that episode. There will be a list of the character names that you can choose from to find out there species and dead or alive status. The experience is to be useful towards a Rick and Morty game that I will later develop using this sites information that I am able to grab.  
 
 ### Technologies Used
 
