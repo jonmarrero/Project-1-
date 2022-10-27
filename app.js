@@ -33,28 +33,9 @@ $(function(){
             $divCharacter.append( `Name: ${character.name}`)
             $divSpecies.append( ` Species: ${character.species}`)
             $divStatus.append( ` Dead or Alive: ${character.status}`)
-        })   
-    }
-
-    // function render(location) {
-    // location.forEach((location) => {
-    //     const $h1 = $(`<h3>${location.name}, ${character.type}, ${character.dimension}</h3>`)   
-    //     const $img = $(`<img src='' alt=${location.name} />`)
-
-    //     $('body').append($h1)
-        
-    //     const $divCharacter = $("div.name")
-    //     $divCharacter.empty()
-    //     const $divSpecies = $("div.species")
-    //     $divSpecies.empty()
-    //     const $divStatus = $("Dead or Alive")
-    //     $divStatus.empty()
-        
-    //     $divCharacter.append( `Name: ${character.name}`)
-    //     $divSpecies.append( ` Species: ${character.species}`)
-    //     $divStatus.append( ` Dead or Alive: ${character.status}`)
-    // })
-})
+        }) 
+    }        
+ });
 
 
 // function characterSearch(character){
@@ -142,4 +123,4 @@ button.addEventListener("click", getRickMortyResults)
 // .then((data) => {
 //     console.log(data)
 //     console.log(data.results)
-// })
+// }
