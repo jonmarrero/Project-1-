@@ -71,26 +71,57 @@ const baseUrl = "https://rickandmortyapi.com/api"
 // })
 
 
-$.ajax("https://rickandmortyapi.com/api")
-.then((data) => {
-    console.log(data)
-})
+const getRickMortyResults = () => {
+    $.ajax("https://rickandmortyapi.com/api/character")
+    .then((data) => {
+        console.log(data)
+        console.log(data.results)
+    })
 
-$.ajax("https://rickandmortyapi.com/api/character")
-.then((data) => {
-    console.log(data)
-    console.log(data.results)
-})
-
-
-$.ajax("https://rickandmortyapi.com/api/location")
-.then((data) => {
+    $.ajax("https://rickandmortyapi.com/api/location")
+    .then((data) => {
     console.log(data)
     console.log(data.results)
-})
+    })
 
-$.ajax("https://rickandmortyapi.com/api/episode")
-.then((data) => {
+    $.ajax("https://rickandmortyapi.com/api/episode")
+    .then((data) => {
     console.log(data)
     console.log(data.results)
-})
+    })
+
+}
+
+getRickMortyResults()
+
+const button = document.querySelector("button")
+button.addEventListener("click", getRickMortyResults)
+
+
+
+
+
+
+// $.ajax("https://rickandmortyapi.com/api")
+// .then((data) => {
+//     console.log(data)
+// })
+
+// $.ajax("https://rickandmortyapi.com/api/character")
+// .then((data) => {
+//     console.log(data)
+//     console.log(data.results)
+// })
+
+
+// $.ajax("https://rickandmortyapi.com/api/location")
+// .then((data) => {
+//     console.log(data)
+//     console.log(data.results)
+// })
+
+// $.ajax("https://rickandmortyapi.com/api/episode")
+// .then((data) => {
+//     console.log(data)
+//     console.log(data.results)
+// })
