@@ -38,6 +38,50 @@ $(function(){
  });
 
 
+ 
+ $.ajax("https://rickandmortyapi.com/api")
+ .then((data) => {
+     console.log(data)
+ })
+ 
+ $.ajax("https://rickandmortyapi.com/api/character")
+ .then((data) => {
+     console.log(data)
+     console.log(data.results)
+ })
+ 
+ 
+ $.ajax("https://rickandmortyapi.com/api/location")
+ .then((data) => {
+     console.log(data)
+     console.log(data.results)
+ })
+ 
+ $.ajax("https://rickandmortyapi.com/api/episode")
+ .then((data) => {
+     console.log(data)
+     console.log(data.results)
+ })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function characterSearch(character){
 //     // constructing url for request
 //     const url = "https://rickandmortyapi.com/api"
@@ -68,59 +112,3 @@ $(function(){
 //     character(textInput)
 //     characterSearch(inputText)
 // })
-
-
-const getRickMortyResults = () => {
-    $.ajax("https://rickandmortyapi.com/api/character")
-    .then((data) => {
-        console.log(data)
-        console.log(data.results)
-    })
-
-    $.ajax("https://rickandmortyapi.com/api/location")
-    .then((data) => {
-    console.log(data)
-    console.log(data.results)
-    })
-
-    $.ajax("https://rickandmortyapi.com/api/episode")
-    .then((data) => {
-    console.log(data)
-    console.log(data.results)
-    })
-
-}
-
-getRickMortyResults()
-
-const button = document.querySelector("button")
-button.addEventListener("click", getRickMortyResults)
-
-
-
-
-
-
-// $.ajax("https://rickandmortyapi.com/api")
-// .then((data) => {
-//     console.log(data)
-// })
-
-// $.ajax("https://rickandmortyapi.com/api/character")
-// .then((data) => {
-//     console.log(data)
-//     console.log(data.results)
-// })
-
-
-// $.ajax("https://rickandmortyapi.com/api/location")
-// .then((data) => {
-//     console.log(data)
-//     console.log(data.results)
-// })
-
-// $.ajax("https://rickandmortyapi.com/api/episode")
-// .then((data) => {
-//     console.log(data)
-//     console.log(data.results)
-// }
