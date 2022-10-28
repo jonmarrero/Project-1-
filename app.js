@@ -34,11 +34,54 @@ $(function(){
             $divSpecies.append( ` Species: ${character.species}`)
             $divStatus.append( ` Dead or Alive: ${character.status}`)
         }) 
-    }        
+    } 
+           
  });
 
+ function render1(location){
+    location.forEach((location) => {
+        const $h2 = $(`<h2>${location.name}, ${location.type}, ${location.dimension}</h2>`)   
+        const $img1 = $(`<img src='' alt=${location.name} />`)
 
- 
+        $('body').append($h2)
+        
+        const $divLocation = $("div.name")
+        $divLocation.empty()
+        const $divType = $("div.type")
+        $divType.empty()
+        const $divDimension = $("div.dimension")
+        $divDimension.empty()
+        
+        $divlocation.append( `Name: ${location.name}`)
+        $divtype.append( ` Type: ${location.type}`)
+        $divDimension.append( ` Dimension: ${location.dimension}`)
+    }) 
+}        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  $.ajax("https://rickandmortyapi.com/api")
  .then((data) => {
      console.log(data)
