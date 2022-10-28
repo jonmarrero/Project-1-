@@ -1,3 +1,7 @@
+// -----------------------------------
+// Rick and Morty App
+// -----------------------------------
+
 const baseUrl = "https://rickandmortyapi.com/api/character?name="
 const baseUrl1 = "https://rickandmortyapi.com/api/location?page="
 
@@ -8,9 +12,8 @@ const $button = $("button")
 const $type = $("input[type=text]")
 const $divLocation = $(".location")
 const $divType = $(".type")
-const $divDimension = $(".dimension")
 
-function searchCharacter (character, location){
+function searchCharacter (character){
     const url = `${baseUrl}${character}`
     const url1 = `${baseUrl1}${location}`
     
@@ -24,19 +27,16 @@ function searchCharacter (character, location){
         console.log(charStatus)
         const charSpecies = charInfo.results[0].species
         console.log(charSpecies)
-        const charLocation = charInfo.results[0].location
+        const charLocation = charInfo.results[0].location.name
         console.log(charLocation)
         const charType = charInfo.results[0].type
         console.log(charType)
-        const charDimension = charInfo.results[0].dimension
-        console.log(charDimension)
 
         $divCharacter.append( ` Name: ${charName}`)
         $divStatus.append(` Dead or Alive: ${charStatus}`)
         $divSpecies.append( ` Species: ${charSpecies}`)
         $divLocation.append(` Location: ${charLocation}`)
         $divType.append(` Type: ${charType}`)
-        $divDimension.append(` Dimension: ${charDimension}`)
     }) 
 }
 // searchCharacter('Rick')
@@ -52,8 +52,6 @@ $button.on("click", event => {
     $divLocation.empty()
     const $divType = $("div.type")
     $divType.empty()
-    const $divDimension = $("div.dimension")
-    $divDimension.empty()
 
     event.preventDefault()
     const person = $type[0].value
