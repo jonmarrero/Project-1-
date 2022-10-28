@@ -1,7 +1,7 @@
 
 # The Rick & Morty Experience
 
-- During The Rick & Morty experience you will be able to search all characters to see; Name, what type of species they are, and there status of dead or alive within that episode. There will be a list of the character names that you can choose from to find out there species and dead or alive status. The experience is to be useful towards a Rick and Morty game that I will later develop using this sites information that I am able to grab.  
+- During The Rick & Morty experience you will be able to search all characters to see; Name, what type of species they are, and there status of dead or alive within that episode. There will be a list of the character names that you can choose from to find out there species and dead or alive status. 
 
 ### Technologies Used
 
@@ -11,6 +11,7 @@
 - JavaScript
 - Json
 - Vercel
+- Ajax
 - Rick & Morty API's
 
 ### Wireframes
