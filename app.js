@@ -1,15 +1,20 @@
 const baseUrl = "https://rickandmortyapi.com/api/character?name="
+const baseUrl1 = "https://rickandmortyapi.com/api/location?page="
 
 const $divCharacter = $(".character")
 const $divStatus = $(".status")
 const $divSpecies = $(".species")
 const $button = $("button")
 const $type = $("input[type=text]")
+const $divLocation = $(".location")
+const $divType = $(".type")
+const $divDimension = $(".dimension")
 
-function searchCharacter (character){
+function searchCharacter (character, location){
     const url = `${baseUrl}${character}`
+    const url1 = `${baseUrl1}${location}`
     
-    $.ajax(url)
+    $.ajax(url, url1)
     .then((charInfo) => {
         const char1 = charInfo.results[0]
         console.log(char1)
@@ -19,10 +24,19 @@ function searchCharacter (character){
         console.log(charStatus)
         const charSpecies = charInfo.results[0].species
         console.log(charSpecies)
+        const charLocation = charInfo.results[0].location
+        console.log(charLocation)
+        const charType = charInfo.results[0].type
+        console.log(charType)
+        const charDimension = charInfo.results[0].dimension
+        console.log(charDimension)
 
         $divCharacter.append( ` Name: ${charName}`)
-        $divStatus.append(` Species: ${charStatus}`)
-        $divSpecies.append( ` Dead or ALive: ${charSpecies}`)
+        $divStatus.append(` Dead or Alive: ${charStatus}`)
+        $divSpecies.append( ` Species: ${charSpecies}`)
+        $divLocation.append(` Location: ${charLocation}`)
+        $divType.append(` Type: ${charType}`)
+        $divDimension.append(` Dimension: ${charDimension}`)
     }) 
 }
 // searchCharacter('Rick')
@@ -34,6 +48,12 @@ $button.on("click", event => {
     $divSpecies.empty()
     const $divStatus = $("div.status")
     $divStatus.empty()
+    const $divLocation = $("div.location")
+    $divLocation.empty()
+    const $divType = $("div.type")
+    $divType.empty()
+    const $divDimension = $("div.dimension")
+    $divDimension.empty()
 
     event.preventDefault()
     const person = $type[0].value
