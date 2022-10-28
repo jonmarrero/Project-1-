@@ -20,15 +20,15 @@ function searchCharacter (character){
         const charSpecies = charInfo.results[0].species
         console.log(charSpecies)
 
-        $divCharacter.append( ` ${charName}`)
-        $divStatus.append(` ${charStatus}`)
-        $divSpecies.append( ` ${charSpecies}`)
+        $divCharacter.append( ` Name: ${charName}`)
+        $divStatus.append(` Species: ${charStatus}`)
+        $divSpecies.append( ` Dead or ALive: ${charSpecies}`)
     }) 
 }
 // searchCharacter('Rick')
 
 $button.on("click", event => {
-    const $divCharacter = $("div.name")
+    const $divCharacter = $("div.character")
     $divCharacter.empty()
     const $divSpecies = $("div.species")
     $divSpecies.empty()
