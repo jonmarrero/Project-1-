@@ -1,7 +1,7 @@
 
 # The Rick & Morty Experience
 
-- During The Rick & Morty experience you will be able to search all characters to see; Name, what type of species they are, and there status of dead or alive within that episode. There will be a list of the character names that you can choose from to find out there species and dead or alive status. 
+- During The Rick & Morty experience you will be able to search all characters to see; Name, what type of species they are, their living status, and location (planet).  
 
 ### Technologies Used
 
